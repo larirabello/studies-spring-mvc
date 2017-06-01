@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <div id="main">
+        <div class="row">
+        <tr>
+            <td>Id:</td>
+            <td>Descrição:</td>
+        </tr>
+        <tr th:each="tarefa : ${tarefas}">
+            <td th:text="${tarefa.id}">1</td>
+            <td th:text="${tarefa.descricao}"></td>
+        </tr>
+        </div>
+    </div>
+</body>
+</html>
